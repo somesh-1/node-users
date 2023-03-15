@@ -1,0 +1,803 @@
+{
+	"info": {
+		"_postman_id": "3303ac70-7904-4f5d-9b31-af08e53c23af",
+		"name": "Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all the data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getAll"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all the data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getAll"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1021"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3fd-N6I9Sf4a2c7xe8pd3cWqjZSSEAs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:32:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"641099026eacbbc800ca3533\",\n        \"First_name\": \"somesh\",\n        \"Last_name\": \"deshmukh\",\n        \"Email\": \"abc@gmail.com\",\n        \"Phone\": 1234567,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"641099386eacbbc800ca3535\",\n        \"First_name\": \"somya\",\n        \"Last_name\": \"deshmukh\",\n        \"Email\": \"c@gmail.com\",\n        \"Phone\": 1234567,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6411744119195efe583d8481\",\n        \"First_name\": \"aniket\",\n        \"Last_name\": \"joshi\",\n        \"Email\": \"ccc@gmail.com\",\n        \"Phone\": 12343333,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64117cabbb5b20920b474172\",\n        \"First_name\": \"suyaa\",\n        \"Last_name\": \"deshmukh\",\n        \"Email\": \"c@gmail.com\",\n        \"Phone\": 1234567,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64117e7863f83b7720952ae0\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64117e9063f83b7720952ae2\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"641180d663f83b7720952aef\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6411823f86443318505049cf\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"First_name\": \"shubham\",\r\n    \"Last_name\": \"dixit\",\r\n    \"Email\": \"dixit@gmail.com\",\r\n    \"Phone\": \"11111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\": \"shubham\",\r\n    \"Last_name\": \"dixitt\",\r\n    \"Email\": \"dixit@gmail.com\",\r\n    \"Phone\": \"11111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"81-yMoAXkCm/Wf/cvJ+zvhyIRED1VA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:32:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"First_name\": \"shubham\",\n    \"Last_name\": \"dixitt\",\n    \"Email\": \"dixit@gmail.com\",\n    \"Phone\": 11111111,\n    \"_id\": \"641182a838b558ca4fcf95c2\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/get/641099386eacbbc800ca3535",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get",
+						"641099386eacbbc800ca3535"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/get/641099386eacbbc800ca3535",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"get",
+								"641099386eacbbc800ca3535"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7c-pMFswuVsARCu7HyTzCntUcNxwYg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:32:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"641099386eacbbc800ca3535\",\n    \"First_name\": \"somya\",\n    \"Last_name\": \"deshmukh\",\n    \"Email\": \"c@gmail.com\",\n    \"Phone\": 1234567,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/delete/64117e9063f83b7720952ae2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						"64117e9063f83b7720952ae2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete by id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/delete/64117e9063f83b7720952ae2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"delete",
+								"64117e9063f83b7720952ae2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37-awb9LF8Af7jCI+qVkQ1yprkrjyc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:33:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Document with 64117e9063f83b7720952ae2 has been deleted"
+				}
+			]
+		},
+		{
+			"name": "Filter by email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"First_name\": \"somya\",\r\n    \"Last_name\": \"deshmukh\",\r\n    \"Email\": \"c@gmail.com\",\r\n    \"Phone\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/filter/?Email=ccc@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "Email",
+							"value": "ccc@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Filter by email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\": \"somya\",\r\n    \"Last_name\": \"deshmukh\",\r\n    \"Email\": \"c@gmail.com\",\r\n    \"Phone\": \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/filter/?Email=ccc@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"filter",
+								""
+							],
+							"query": [
+								{
+									"key": "Email",
+									"value": "ccc@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7f-5dyz03m2iN1qJolMXu9WEIckAKw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:33:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6411744119195efe583d8481\",\n        \"First_name\": \"aniket\",\n        \"Last_name\": \"joshi\",\n        \"Email\": \"ccc@gmail.com\",\n        \"Phone\": 12343333,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "update by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"First_name\": \"aniket\",\r\n    \"Last_name\": \"joshi\",\r\n    \"Email\": \"ccc@gmail.com\",\r\n    \"Phone\": \"12343333\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/update/6411744119195efe583d8481",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update",
+						"6411744119195efe583d8481"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update by id",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_name\": \"aniket\",\r\n    \"Last_name\": \"joshiii\",\r\n    \"Email\": \"ccc@gmail.com\",\r\n    \"Phone\": \"12343333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/update/6411744119195efe583d8481",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update",
+								"6411744119195efe583d8481"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7f-RXryqbRSTd5SVHCfo+E/YgasM1M\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:33:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6411744119195efe583d8481\",\n    \"First_name\": \"aniket\",\n    \"Last_name\": \"joshiii\",\n    \"Email\": \"ccc@gmail.com\",\n    \"Phone\": 12343333,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "filter by first name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/filter/?First_name=somesh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "First_name",
+							"value": "somesh"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filter by first name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/filter/?First_name=somesh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"filter",
+								""
+							],
+							"query": [
+								{
+									"key": "First_name",
+									"value": "somesh"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"81-xdcOvrTXUMqxWy397CyzA+HLVFU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:33:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"641099026eacbbc800ca3533\",\n        \"First_name\": \"somesh\",\n        \"Last_name\": \"deshmukh\",\n        \"Email\": \"abc@gmail.com\",\n        \"Phone\": 1234567,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "filter by last name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/filter/?Last_name=dixit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "Last_name",
+							"value": "dixit"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filter by last name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/filter/?Last_name=dixit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"filter",
+								""
+							],
+							"query": [
+								{
+									"key": "Last_name",
+									"value": "dixit"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "517"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"205-yNgi4XJ5BZDW2r6auKILA1SdfEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:33:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"64117e7863f83b7720952ae0\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64117e9063f83b7720952ae2\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"641180d663f83b7720952aef\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6411823f86443318505049cf\",\n        \"First_name\": \"shubham\",\n        \"Last_name\": \"dixit\",\n        \"Email\": \"dixit@gmail.com\",\n        \"Phone\": 11111111,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "filter by phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/filter/?Phone=12343333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					],
+					"query": [
+						{
+							"key": "Phone",
+							"value": "12343333"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filter by phone",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/filter/?Phone=12343333",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"filter",
+								""
+							],
+							"query": [
+								{
+									"key": "Phone",
+									"value": "12343333"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"81-URcDT/NPzICGLX3gN2KogcbII0E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 08:34:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6411744119195efe583d8481\",\n        \"First_name\": \"aniket\",\n        \"Last_name\": \"joshiii\",\n        \"Email\": \"ccc@gmail.com\",\n        \"Phone\": 12343333,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
